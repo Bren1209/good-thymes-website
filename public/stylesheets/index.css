@@ -1,0 +1,122 @@
+body, html {
+    background-color: #effcfa;
+}
+
+nav {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.row {
+    margin: 0;
+}
+
+.nav-item {
+    padding: 0 1rem 0 1rem;
+}
+
+.nav-link {
+    color: #2e2e2e !important;
+    font-weight: 500;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.splash-container {
+    background-color: #a2f7ea;
+    overflow-x: hidden;
+    z-index: -1;
+    margin-bottom: 3rem;
+}
+
+.splash-content {
+    position: relative;
+    bottom: 3rem;
+    left: 10%;
+}
+
+.test-circle img {
+    border-radius: 47%;
+    border: 1.5rem #effcfa solid;
+    width: 110%;
+}
+
+.text-container {
+    background-color: #effcfa;
+    padding: 2rem;
+    /* width: 80%; */
+}
+
+.splash-text{
+    padding-left: 3rem;
+    text-align: center;
+}
+
+.gtTitle {
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.splash-text h3 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.splash-text img {
+    width: 20%;
+}
+
+.desc {
+    margin-top: 3rem;
+    padding: 0 5rem;
+    text-align: center;
+}
+
+.image {
+    margin: 3rem 0;
+    padding: 0;
+    background-color: #a2f7ea;
+}
+
+.pngIcon {
+    width: 20%;
+}
+
+.subjectImgR {
+    width: 80%;
+    margin: 0 auto;
+    float: right;
+}
+
+.subjectImgL {
+    width: 80%;
+    margin: 0 auto;
+    float: left;
+}
+
+.services-container h4{
+    font-family: 'Merriweather', serif;
+    color: #53ecd5;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.services-container p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.services-hr {
+    background-color: #53ecd5;
+    border: none;
+    height: 2px;
+    width: 20%;
+}
+
