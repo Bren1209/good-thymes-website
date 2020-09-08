@@ -27,6 +27,8 @@ nav {
 
 .splash-container {
     background-color: #a2f7ea;
+    background-image: url('/resources/flowers.png');
+    background-repeat: no-repeat;
     overflow-x: hidden;
     z-index: -1;
     margin-bottom: 3rem;
@@ -51,7 +53,7 @@ nav {
 }
 
 .splash-text{
-    padding-left: 3rem;
+    margin-left: 3rem;
     text-align: center;
 }
 
@@ -72,8 +74,8 @@ nav {
 }
 
 .desc {
-    margin-top: 3rem;
-    padding: 0 5rem;
+    margin: 1.5rem 0rem;
+    padding: 0 2rem;
     text-align: center;
 }
 
@@ -85,18 +87,6 @@ nav {
 
 .pngIcon {
     width: 20%;
-}
-
-.subjectImgR {
-    width: 80%;
-    margin: 0 auto;
-    float: right;
-}
-
-.subjectImgL {
-    width: 80%;
-    margin: 0 auto;
-    float: left;
 }
 
 .services-container h4{
@@ -120,3 +110,47 @@ nav {
     width: 20%;
 }
 
+.about-container {
+    margin: 3rem 0rem;
+}
+
+.about-container p {
+    font-size: 1.1rem;
+    padding: 0 4rem;
+}
+
+.img-fix {
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.418);
+}
+
+.contact-container {
+    margin: 3rem 0;
+}
+
+.form-control {
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.418);
+}
+
+.form-group {
+    font-family: 'Raleway', sans-serif;
+}
+
+@media (max-width: 768px){
+
+    .splash-content {
+        position: relative;
+        bottom: 0;
+        left: -5%;
+    }
+
+    .splash-content img {
+        text-align: center;
+    }
+
+    .splash-text{
+        margin-left: 0;
+        text-align: center;
+    }
+}
