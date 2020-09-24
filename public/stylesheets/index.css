@@ -1,15 +1,24 @@
 body, html {
     background-color: #effcfa;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 nav {
     font-size: 1.2rem;
     font-family: 'Raleway', sans-serif;
-    background-color: rgba(255, 255, 255, 0);
+    /* background-color: rgba(255, 255, 255, 0); */
+    background-color: #effcfa;
+    width: 100%;
+    z-index: 1;
 }
 
 .row {
     margin: 0;
+}
+
+.navbar {
+    position: fixed;
 }
 
 .nav-item {
@@ -28,16 +37,10 @@ nav {
 .splash-container {
     background-color: #a2f7ea;
     background-image: url('/resources/flowers.png');
-    background-repeat: no-repeat;
     overflow-x: hidden;
-    z-index: -1;
     margin-bottom: 3rem;
-}
-
-.splash-content {
-    position: relative;
-    bottom: 3rem;
-    left: 10%;
+    height: 100%;
+    width: 100%;
 }
 
 .test-circle img {
@@ -89,6 +92,11 @@ nav {
     width: 20%;
 }
 
+.pngIcon-splitter {
+    width: 20%;
+    padding: 4rem 0;
+}
+
 .services-container h4{
     font-family: 'Merriweather', serif;
     color: #53ecd5;
@@ -115,8 +123,15 @@ nav {
 }
 
 .about-container p {
+    font-size: 1.2rem;
+    margin: 0 6rem 1rem 6rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.other-services h6 {
+    text-decoration: underline;
+    font-weight: 700;
     font-size: 1.1rem;
-    padding: 0 4rem;
 }
 
 .img-fix {
@@ -129,6 +144,15 @@ nav {
     margin: 3rem 0;
 }
 
+.contact-container form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.van-eye {
+    margin-left: 3rem;
+}
+
 .form-control {
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.418);
 }
@@ -137,12 +161,148 @@ nav {
     font-family: 'Raleway', sans-serif;
 }
 
-@media (max-width: 768px){
+.footer-container {
+    margin-top: 2rem;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    background-color: #a2f7ea;
+}
+
+.footer-container p{
+    font-size: 1.1rem;
+    color: #2e2e2e;
+}
+
+.footer-container i {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #2e2e2e;
+    padding: 0 0.5rem;
+}
+
+.bren-contact {
+    padding-top: 0.7rem;
+    font-size: 0.9rem !important;
+    font-weight: 700 !important;
+}
+
+.pfp {
+    width: 20%;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    border: #a2f7ea 0.4rem solid;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.418);
+}
+
+.gallery-container {
+    margin: 3rem 0 3rem 0;
+}
+
+.gallery-container h3 {
+    text-align: center;
+    /* padding: 4rem 0; */
+}
+
+.gallery-container .services-hr{
+    width: 10%;
+}
+
+.carousel-item {
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    width: 75%;
+    /* max-height: 60% !important; */
+    margin: 1rem auto;
+    border: #a2f7ea 0.4rem solid;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.418);
+} 
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+  /* position: absolute; */
+  top: 50%;
+  margin-top: -10px; /* fix */
+  display: inline-block;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 2.5rem;
+  color: rgb(36, 36, 36);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 2.5rem;
+  color: rgb(36, 36, 36);
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    nav {
+        background-color: transparent;
+        margin-top: 1rem;
+    }
+
+    .container-fluid {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        background-color: #effcfa;
+        width: 30%;
+        float: left;
+        border: 2px solid gray;
+    }
+
+    .pngIcon-splitter {
+        width: 50%;
+    }
 
     .splash-content {
+        display: none;
         position: relative;
         bottom: 0;
         left: -5%;
+    }
+
+    .about-container p {
+        font-size: 1.2rem;
+        margin: 0 1rem 1rem 1rem;
+    }
+
+    .pfp {
+        width: 60%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+    display: none;
+    }
+
+    .carousel-item img {
+        width: 97%;
+    }
+
+    .van-eye {
+        display: none
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: inline;
     }
 
     .splash-content img {
@@ -152,5 +312,17 @@ nav {
     .splash-text{
         margin-left: 0;
         text-align: center;
+    }
+
+    .services-hr {
+        width: 40%;
+    }
+
+    .gallery-container .services-hr{
+        width: 40%;
+    }
+
+    .contact-container form {
+        width: 90%;
     }
 }
