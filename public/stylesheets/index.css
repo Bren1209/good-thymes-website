@@ -247,6 +247,10 @@ nav {
     display: none;
 }
 
+.alert {
+    margin-top: 4.5rem;
+}
+
 @media (max-width: 992px) {
     nav {
         background-color: transparent;
@@ -259,7 +263,7 @@ nav {
 
     .navbar-nav {
         background-color: #effcfa;
-        width: 30%;
+        width: 35%;
         float: left;
         border: 2px solid gray;
     }

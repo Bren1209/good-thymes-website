@@ -1,48 +1,50 @@
-$(function () {
+// $(document).ready(function () {
 
-  $(".home").click(function() {
-    $("body, html").animate(
-      {
-        scrollTop: $(".splash-container").offset().top
-      },
-      800
-    );
-  });
+//   $(".home").click(function() {
+//     $("body, html").animate(
+//       {
+//         scrollTop: $(".splashjq").offset().top - 100
+//       },
+//       800
+//     );
+//   });
 
-  $(".about").click(function() {
-    $("body, html").animate(
-      {
-        scrollTop: $(".about-container").offset().top - 70
-      },
-      800
-    );
-  });
+//   $(".about").click(function() {
+//     $("body, html").animate(
+//       {
+//         scrollTop: $(".aboutjq").offset().top - 100
+//       },
+//       800
+//     );
+//   });
 
-  $(".services").click(function() {
-    $("body, html").animate(
-      {
-        scrollTop: $(".services-container").offset().top - 120
-      },
-      800
-    );
-  });
+//   $(".services").click(function() {
+//     $("body, html").animate(
+//       {
+//         scrollTop: $(".servicesjq").offset().top - 100
+//       },
+//       800
+//     );
+//   });
 
-  $(".gallery").click(function() {
-    $("body, html").animate(
-      {
-        scrollTop: $(".gallery-container").offset().top - 70
-      },
-      800
-    );
-  });
+//   $(".gallery").click(function() {
+//     $("body, html").animate(
+//       {
+//         scrollTop: $(".galleryjq").offset().top - 100
+//       },
+//       800
+//     );
+//   });
 
-  $(".contact").click(function() {
-    $("body, html").animate(
-      {
-        scrollTop: $(".contact-container").offset().top - 70
-      },
-      800
-    );
-  });
+//   $('#main-nav li a').click(function(e) {
+  	
+//   	var targetHref = $(this).attr('href');
+	  
+//     $('html, body').animate({
+//       scrollTop: $(targetHref).offset().top
+//     }, 1000);
+      
+//     e.preventDefault();
+//   });
 
-});
+// });
