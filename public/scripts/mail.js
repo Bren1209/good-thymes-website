@@ -4,8 +4,8 @@ require('dotenv').config()
 
 const auth = {
     auth: {
-        api_key: 'key-a475b15ed9027e2326e419455cdeb178',
-        domain: 'sandboxc1c183b6bbeb4782b07269a9c1d097b8.mailgun.org'
+        api_key: process.env.API_KEY,
+        domain: process.env.DOMAIN
     }
 }
 

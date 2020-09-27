@@ -4,6 +4,7 @@ const sendMail = require('./public/scripts/mail.js')
 const flash = require('connect-flash')
 const bodyParser = require('body-parser')
 var date = new Date().getFullYear()
+require('dotenv').config()
 
 
 const app = express();
@@ -14,7 +15,7 @@ app.use(flash())
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.use(require('express-session')({
-  secret: 'This is not the secret you are looking for.',
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: false
 }))
